@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="DiscountCell">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="325" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="优惠 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kPH-XX-2Mu">
+                        <rect key="frame" x="30" y="16" width="40" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="SDs-Cf-Tlq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57e-73-jM7">
+                        <rect key="frame" x="123" y="15" width="194" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wNY-Vu-upc">
+                        <rect key="frame" x="30" y="49" width="265" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="yfa-Ky-zeW"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" contentMode="left" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6RU-yZ-aw3">
+                        <rect key="frame" x="73" y="14" width="45" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="45" id="7fo-qT-Q3P"/>
+                            <constraint firstAttribute="height" constant="22" id="9m8-bj-mJT"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-jiantou(1)" translatesAutoresizingMaskIntoConstraints="NO" id="Tpd-Db-aWV">
+                        <rect key="frame" x="285" y="22" width="10" height="6"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="6" id="4nO-6X-467"/>
+                            <constraint firstAttribute="width" constant="10" id="wnI-Pi-qXe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Tpd-Db-aWV" secondAttribute="bottom" constant="18" id="0hQ-zd-Rgi"/>
+                    <constraint firstItem="Tpd-Db-aWV" firstAttribute="centerY" secondItem="57e-73-jM7" secondAttribute="centerY" id="1Ue-67-kvF"/>
+                    <constraint firstItem="kPH-XX-2Mu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="7xI-Wp-Itd"/>
+                    <constraint firstItem="kPH-XX-2Mu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8eu-08-hfD"/>
+                    <constraint firstItem="6RU-yZ-aw3" firstAttribute="leading" secondItem="kPH-XX-2Mu" secondAttribute="trailing" constant="3" id="B7c-hA-uw6"/>
+                    <constraint firstAttribute="bottom" secondItem="wNY-Vu-upc" secondAttribute="bottom" id="CZK-hp-8YB"/>
+                    <constraint firstAttribute="trailing" secondItem="wNY-Vu-upc" secondAttribute="trailing" constant="30" id="CdW-d5-igg"/>
+                    <constraint firstItem="wNY-Vu-upc" firstAttribute="leading" secondItem="kPH-XX-2Mu" secondAttribute="leading" id="UUl-7c-HKF"/>
+                    <constraint firstAttribute="trailing" secondItem="57e-73-jM7" secondAttribute="trailing" constant="8" id="Vy1-S3-afP"/>
+                    <constraint firstItem="6RU-yZ-aw3" firstAttribute="leading" secondItem="kPH-XX-2Mu" secondAttribute="trailing" constant="3" id="ceN-g9-RQL"/>
+                    <constraint firstItem="6RU-yZ-aw3" firstAttribute="centerY" secondItem="kPH-XX-2Mu" secondAttribute="centerY" id="ico-gS-Hvs"/>
+                    <constraint firstItem="57e-73-jM7" firstAttribute="centerY" secondItem="6RU-yZ-aw3" secondAttribute="centerY" id="ilX-fU-gQH"/>
+                    <constraint firstItem="Tpd-Db-aWV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="mVV-FU-brd"/>
+                    <constraint firstAttribute="trailing" secondItem="Tpd-Db-aWV" secondAttribute="trailing" constant="30" id="miu-ee-ory"/>
+                    <constraint firstItem="57e-73-jM7" firstAttribute="leading" secondItem="6RU-yZ-aw3" secondAttribute="trailing" constant="5" id="zjU-8d-FnV"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="0hQ-zd-Rgi"/>
+                        <exclude reference="mVV-FU-brd"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailVoucherLab" destination="57e-73-jM7" id="XjE-9I-UZt"/>
+                <outlet property="discountTitleLab" destination="kPH-XX-2Mu" id="wvW-Pc-nnW"/>
+                <outlet property="lineView" destination="wNY-Vu-upc" id="w4k-uT-ATB"/>
+                <outlet property="rightImageView" destination="Tpd-Db-aWV" id="IHY-SR-R30"/>
+                <outlet property="voucherLab" destination="6RU-yZ-aw3" id="X49-EP-vq4"/>
+            </connections>
+            <point key="canvasLocation" x="-30.5" y="254"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont-jiantou(1)" width="9" height="7"/>
+    </resources>
+</document>

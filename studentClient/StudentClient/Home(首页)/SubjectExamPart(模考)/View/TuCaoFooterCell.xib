@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="TuCaoFooterCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Odu-fx-ftA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <state key="normal" title="查看全部1129位学员分析">
+                            <color key="titleColor" red="0.4823529411764706" green="0.80000000000000004" blue="0.12549019607843137" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="moreTuCaoBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Wcd-2n-i6d"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Odu-fx-ftA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="7Ka-I8-zdC"/>
+                    <constraint firstItem="Odu-fx-ftA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="F3e-rB-9wh"/>
+                    <constraint firstAttribute="bottom" secondItem="Odu-fx-ftA" secondAttribute="bottom" id="gbE-V5-0Kf"/>
+                    <constraint firstAttribute="trailing" secondItem="Odu-fx-ftA" secondAttribute="trailing" id="ieq-JW-wLl"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moreTuCaoBtn" destination="Odu-fx-ftA" id="AOr-hs-mlR"/>
+            </connections>
+            <point key="canvasLocation" x="190" y="275"/>
+        </tableViewCell>
+    </objects>
+</document>

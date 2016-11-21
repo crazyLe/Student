@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PersonalInformationCell" rowHeight="93" id="KGk-i7-Jjw" customClass="PersonalInformationCell">
+            <rect key="frame" x="0.0" y="0.0" width="365" height="93"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="365" height="92"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X4k-tn-RE9">
+                        <rect key="frame" x="21" y="35" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-set-jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="wgf-2u-RHf">
+                        <rect key="frame" x="343" y="37" width="12" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="Ahb-cW-bd0"/>
+                            <constraint firstAttribute="width" constant="12" id="TVI-9j-ibS"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="StU-zX-JKd">
+                        <rect key="frame" x="288" y="36" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="X4k-tn-RE9" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Ox7-Kn-ED2"/>
+                    <constraint firstItem="wgf-2u-RHf" firstAttribute="leading" secondItem="StU-zX-JKd" secondAttribute="trailing" constant="10" id="bb3-vJ-Tuf"/>
+                    <constraint firstItem="StU-zX-JKd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="eYF-Y2-WpA"/>
+                    <constraint firstAttribute="trailing" secondItem="wgf-2u-RHf" secondAttribute="trailing" constant="10" id="kZ6-Wl-HDj"/>
+                    <constraint firstItem="wgf-2u-RHf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oOK-hM-MUW"/>
+                    <constraint firstItem="X4k-tn-RE9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="pMW-hy-wDz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="arrowImgView" destination="wgf-2u-RHf" id="FKO-n4-rf1"/>
+                <outlet property="detailLab" destination="StU-zX-JKd" id="lec-8e-RPP"/>
+                <outlet property="titleLab" destination="X4k-tn-RE9" id="ufB-GF-2x8"/>
+            </connections>
+            <point key="canvasLocation" x="197.5" y="325.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont-set-jiantou" width="8" height="14"/>
+    </resources>
+</document>

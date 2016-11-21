@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BindCoachCell" rowHeight="307" id="KGk-i7-Jjw" customClass="BindCoachCell">
+            <rect key="frame" x="0.0" y="0.0" width="215" height="307"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="215" height="306"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="学时陪练详情顶部头像" translatesAutoresizingMaskIntoConstraints="NO" id="1we-BR-wyb">
+                        <rect key="frame" x="50" y="25" width="115" height="115"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="103" id="DMg-uF-AUA"/>
+                            <constraint firstAttribute="width" constant="103" id="UrP-ZI-usg"/>
+                            <constraint firstAttribute="width" secondItem="1we-BR-wyb" secondAttribute="height" multiplier="1:1" id="Wvq-Ue-rtv"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DMg-uF-AUA"/>
+                                <exclude reference="UrP-ZI-usg"/>
+                            </mask>
+                        </variation>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="钱教练" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-x7-3UD">
+                        <rect key="frame" x="82" y="160" width="51" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="合肥八一驾校" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Eu-RT-Bi0">
+                        <rect key="frame" x="60" y="183" width="96" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="手机:18567974890" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iwq-DV-oJe">
+                        <rect key="frame" x="38" y="205" width="139" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7oi-X8-2Zx">
+                        <rect key="frame" x="70" y="233" width="75" height="29"/>
+                        <color key="backgroundColor" red="0.36078431372549019" green="0.71372549019607845" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="75" id="Imu-r6-Q7A"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="立即绑定"/>
+                        <connections>
+                            <action selector="bindingBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="j7k-Qf-zL0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="1we-BR-wyb" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="6KR-MQ-Wd4"/>
+                    <constraint firstItem="1we-BR-wyb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="25" id="8Ti-fI-jZI"/>
+                    <constraint firstItem="Iwq-DV-oJe" firstAttribute="centerX" secondItem="1we-BR-wyb" secondAttribute="centerX" id="Bwd-tp-E5J"/>
+                    <constraint firstItem="Jmw-x7-3UD" firstAttribute="top" secondItem="1we-BR-wyb" secondAttribute="bottom" constant="20" id="DjE-rl-0dD"/>
+                    <constraint firstItem="8Eu-RT-Bi0" firstAttribute="centerX" secondItem="1we-BR-wyb" secondAttribute="centerX" id="GDp-8p-ew0"/>
+                    <constraint firstItem="Iwq-DV-oJe" firstAttribute="top" secondItem="8Eu-RT-Bi0" secondAttribute="bottom" constant="2" id="Hub-87-74E"/>
+                    <constraint firstItem="1we-BR-wyb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="L7f-cQ-F1B"/>
+                    <constraint firstAttribute="trailing" secondItem="1we-BR-wyb" secondAttribute="trailing" constant="50" id="M00-ZC-8fo"/>
+                    <constraint firstItem="8Eu-RT-Bi0" firstAttribute="top" secondItem="Jmw-x7-3UD" secondAttribute="bottom" constant="2" id="ONH-Y9-dLd"/>
+                    <constraint firstItem="7oi-X8-2Zx" firstAttribute="top" secondItem="Iwq-DV-oJe" secondAttribute="bottom" constant="8" id="UCl-zl-1kr"/>
+                    <constraint firstItem="Jmw-x7-3UD" firstAttribute="centerX" secondItem="1we-BR-wyb" secondAttribute="centerX" id="mu4-8i-gOY"/>
+                    <constraint firstItem="7oi-X8-2Zx" firstAttribute="centerX" secondItem="Iwq-DV-oJe" secondAttribute="centerX" id="qKh-8w-P3q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bindingBtn" destination="7oi-X8-2Zx" id="kdB-Jk-lbf"/>
+                <outlet property="driverSchoolLabel" destination="8Eu-RT-Bi0" id="cXw-GK-5Eu"/>
+                <outlet property="iconImageView" destination="1we-BR-wyb" id="ULH-Ic-ZjK"/>
+                <outlet property="mobileLabel" destination="Iwq-DV-oJe" id="YOQ-lE-Rhc"/>
+                <outlet property="nameLabel" destination="Jmw-x7-3UD" id="Bv1-hz-kyC"/>
+            </connections>
+            <point key="canvasLocation" x="147.5" y="283.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="学时陪练详情顶部头像" width="64" height="64"/>
+    </resources>
+</document>

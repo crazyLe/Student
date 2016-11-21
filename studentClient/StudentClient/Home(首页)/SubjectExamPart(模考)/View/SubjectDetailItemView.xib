@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9YX-4Z-bbH" customClass="SubjectDetailItemView">
+            <rect key="frame" x="0.0" y="0.0" width="203" height="120"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥300/小时" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7wX-iZ-juo">
+                    <rect key="frame" x="0.0" y="30" width="203" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.62745098040000002" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="提供考试车辆，不提供教练员" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ero-om-rqS">
+                    <rect key="frame" x="0.0" y="60" width="203" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.62745098040000002" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00-08:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SE1-oy-CDU">
+                    <rect key="frame" x="0.0" y="0.0" width="203" height="30"/>
+                    <color key="backgroundColor" red="0.69411764710000001" green="0.82352941180000006" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Saq-yN-dud"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余5  可约:20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="twW-MD-Vza">
+                    <rect key="frame" x="0.0" y="90" width="203" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.62745098040000002" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="twW-MD-Vza" firstAttribute="leading" secondItem="9YX-4Z-bbH" secondAttribute="leading" id="DLw-4x-aNM"/>
+                <constraint firstAttribute="trailing" secondItem="Ero-om-rqS" secondAttribute="trailing" id="L5P-8Y-HJ6"/>
+                <constraint firstItem="twW-MD-Vza" firstAttribute="top" secondItem="Ero-om-rqS" secondAttribute="bottom" id="Lob-bq-1Uv"/>
+                <constraint firstItem="SE1-oy-CDU" firstAttribute="leading" secondItem="9YX-4Z-bbH" secondAttribute="leading" id="O8T-vt-Ywv"/>
+                <constraint firstItem="7wX-iZ-juo" firstAttribute="leading" secondItem="9YX-4Z-bbH" secondAttribute="leading" id="QNr-Ww-BEh"/>
+                <constraint firstItem="Ero-om-rqS" firstAttribute="leading" secondItem="9YX-4Z-bbH" secondAttribute="leading" id="QNs-oI-01Z"/>
+                <constraint firstAttribute="trailing" secondItem="SE1-oy-CDU" secondAttribute="trailing" id="XXu-Xv-DQA"/>
+                <constraint firstItem="7wX-iZ-juo" firstAttribute="top" secondItem="SE1-oy-CDU" secondAttribute="bottom" id="eb3-ta-X3E"/>
+                <constraint firstItem="twW-MD-Vza" firstAttribute="height" secondItem="7wX-iZ-juo" secondAttribute="height" id="hJ0-FT-FXC"/>
+                <constraint firstItem="Ero-om-rqS" firstAttribute="top" secondItem="7wX-iZ-juo" secondAttribute="bottom" id="mbd-JE-xoF"/>
+                <constraint firstItem="Ero-om-rqS" firstAttribute="top" secondItem="7wX-iZ-juo" secondAttribute="bottom" id="osJ-lB-SdK"/>
+                <constraint firstAttribute="trailing" secondItem="7wX-iZ-juo" secondAttribute="trailing" id="rK0-Em-0Ju"/>
+                <constraint firstAttribute="bottom" secondItem="twW-MD-Vza" secondAttribute="bottom" id="sJH-MP-bSw"/>
+                <constraint firstAttribute="trailing" secondItem="twW-MD-Vza" secondAttribute="trailing" id="vtx-qk-11R"/>
+                <constraint firstItem="SE1-oy-CDU" firstAttribute="top" secondItem="9YX-4Z-bbH" secondAttribute="top" id="xTC-Ph-lTc"/>
+                <constraint firstItem="Ero-om-rqS" firstAttribute="height" secondItem="7wX-iZ-juo" secondAttribute="height" id="xoP-3T-hKI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="detailLabel" destination="Ero-om-rqS" id="6YE-oC-Ezr"/>
+                <outlet property="moneyLabel" destination="7wX-iZ-juo" id="8f1-G3-SQ4"/>
+                <outlet property="numberLabel" destination="twW-MD-Vza" id="qMw-qq-sxk"/>
+                <outlet property="timeLabel" destination="SE1-oy-CDU" id="XFp-gM-Nyy"/>
+            </connections>
+            <point key="canvasLocation" x="56.5" y="61.5"/>
+        </view>
+    </objects>
+</document>

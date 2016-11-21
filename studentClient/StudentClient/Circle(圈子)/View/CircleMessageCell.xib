@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="86" id="KGk-i7-Jjw" customClass="CircleMessageCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="85"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="圈子_钱袋大头像" translatesAutoresizingMaskIntoConstraints="NO" id="c2P-9f-nir">
+                        <rect key="frame" x="10" y="12" width="45" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="RL9-H3-qHY"/>
+                            <constraint firstAttribute="width" constant="45" id="U0I-EQ-AJr"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="嫣然为失效评论了你的圈子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxl-la-2UY">
+                        <rect key="frame" x="63" y="12" width="249" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="18" id="5Le-U5-uHQ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" text="嫣然为失效评论了你的圈子" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cA9-2J-LLK">
+                        <rect key="frame" x="63" y="52" width="249" height="27"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07-26 08:23" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCv-zz-867">
+                        <rect key="frame" x="63" y="32" width="249" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="c2P-9f-nir" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="4V9-sK-TJs"/>
+                    <constraint firstItem="cA9-2J-LLK" firstAttribute="leading" secondItem="xCv-zz-867" secondAttribute="leading" id="DaH-EI-17Z"/>
+                    <constraint firstAttribute="bottom" secondItem="cA9-2J-LLK" secondAttribute="bottom" constant="6" id="EGB-8o-5xn"/>
+                    <constraint firstItem="jxl-la-2UY" firstAttribute="top" secondItem="c2P-9f-nir" secondAttribute="top" id="FJk-5Y-g7R"/>
+                    <constraint firstAttribute="trailing" secondItem="jxl-la-2UY" secondAttribute="trailing" constant="8" id="FRa-d7-rlv"/>
+                    <constraint firstItem="cA9-2J-LLK" firstAttribute="height" secondItem="xCv-zz-867" secondAttribute="height" id="ILk-Ij-yK3"/>
+                    <constraint firstItem="jxl-la-2UY" firstAttribute="leading" secondItem="c2P-9f-nir" secondAttribute="trailing" constant="8" id="IXC-Yb-Qun"/>
+                    <constraint firstItem="xCv-zz-867" firstAttribute="leading" secondItem="jxl-la-2UY" secondAttribute="leading" id="dfN-BI-aiT"/>
+                    <constraint firstItem="cA9-2J-LLK" firstAttribute="top" secondItem="xCv-zz-867" secondAttribute="bottom" constant="2" id="fIU-s7-5Yj"/>
+                    <constraint firstItem="xCv-zz-867" firstAttribute="top" secondItem="jxl-la-2UY" secondAttribute="bottom" constant="2" id="iXs-te-bT6"/>
+                    <constraint firstItem="c2P-9f-nir" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="oFG-Kh-ocR"/>
+                    <constraint firstItem="xCv-zz-867" firstAttribute="height" secondItem="jxl-la-2UY" secondAttribute="height" id="oSY-J8-Md4"/>
+                    <constraint firstItem="cA9-2J-LLK" firstAttribute="trailing" secondItem="xCv-zz-867" secondAttribute="trailing" id="qgn-cc-0du"/>
+                    <constraint firstItem="xCv-zz-867" firstAttribute="trailing" secondItem="jxl-la-2UY" secondAttribute="trailing" id="uua-sk-5zY"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="ILk-Ij-yK3"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="c2P-9f-nir" id="3eQ-af-83s"/>
+                <outlet property="subTitleLabel" destination="cA9-2J-LLK" id="yc8-jB-e76"/>
+                <outlet property="timeLabel" destination="xCv-zz-867" id="8lP-Zw-6ll"/>
+                <outlet property="titleLabel" destination="jxl-la-2UY" id="867-ZM-hg4"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="235"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="圈子_钱袋大头像" width="55" height="55"/>
+    </resources>
+</document>

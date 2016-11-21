@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="gpi-Yl-TQX">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Player View Controller-->
+        <scene sceneID="TSZ-bq-HCf">
+            <objects>
+                <viewController hidesBottomBarWhenPushed="YES" id="gpi-Yl-TQX" customClass="MoviePlayerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SgO-WE-xOh"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bla-v6-9Qa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hUa-z9-L6u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ume-ic-6k0" customClass="ZFPlayerView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ume-ic-6k0" secondAttribute="height" multiplier="16:9" priority="750" id="MIN-cQ-HoM"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xK0-H7-vAV" userLabel="statusView">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Lry-Ez-icW"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Lry-Ez-icW"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Lry-Ez-icW"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ume-ic-6k0" firstAttribute="leading" secondItem="hUa-z9-L6u" secondAttribute="leading" id="NvC-9m-AKD"/>
+                            <constraint firstAttribute="trailing" secondItem="xK0-H7-vAV" secondAttribute="trailing" id="VrC-ey-bPJ"/>
+                            <constraint firstItem="xK0-H7-vAV" firstAttribute="leading" secondItem="hUa-z9-L6u" secondAttribute="leading" id="h4D-YA-Mit"/>
+                            <constraint firstItem="xK0-H7-vAV" firstAttribute="top" secondItem="hUa-z9-L6u" secondAttribute="top" id="i1a-qR-bhN"/>
+                            <constraint firstAttribute="trailing" secondItem="ume-ic-6k0" secondAttribute="trailing" id="jY7-Hc-VOb"/>
+                            <constraint firstItem="ume-ic-6k0" firstAttribute="top" secondItem="hUa-z9-L6u" secondAttribute="top" id="qZ4-fr-gAB">
+                                <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                            </constraint>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="xK0-H7-vAV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="h4D-YA-Mit"/>
+                                <exclude reference="VrC-ey-bPJ"/>
+                                <exclude reference="i1a-qR-bhN"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="xK0-H7-vAV"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="h4D-YA-Mit"/>
+                                <include reference="VrC-ey-bPJ"/>
+                                <include reference="i1a-qR-bhN"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="playerView" destination="ume-ic-6k0" id="bKf-kh-2Sg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xQN-OS-Gf4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1400" y="858"/>
+        </scene>
+    </scenes>
+</document>

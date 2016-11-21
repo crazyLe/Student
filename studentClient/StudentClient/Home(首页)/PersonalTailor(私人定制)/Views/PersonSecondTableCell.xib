@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="82" id="KGk-i7-Jjw" customClass="PersonSecondTableCell">
+            <rect key="frame" x="0.0" y="0.0" width="315" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="315" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo-dingzhi" translatesAutoresizingMaskIntoConstraints="NO" id="JA5-g5-ZwC">
+                        <rect key="frame" x="25" y="7" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="JA5-g5-ZwC" secondAttribute="height" multiplier="1:1" id="W1q-cU-5vG"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="张佳琪" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6c-ct-jkd">
+                        <rect key="frame" x="76" y="13" width="60" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="8yf-Ou-TRw"/>
+                            <constraint firstAttribute="width" constant="60" id="rIm-BE-grB"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ftf-vo-XAo">
+                        <rect key="frame" x="228" y="17" width="55" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="55" id="9dd-fC-xPv"/>
+                            <constraint firstAttribute="height" constant="21" id="WiS-UB-Zyc"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iconfont-dingzhi-jiantou" translatesAutoresizingMaskIntoConstraints="NO" id="raR-at-bYZ">
+                        <rect key="frame" x="288" y="20" width="12" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="12" id="3io-QJ-BVZ"/>
+                            <constraint firstAttribute="height" constant="15" id="QOg-Vf-DDL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天蝎座，开的一手好车" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5rj-aM-5Ll">
+                        <rect key="frame" x="76" y="31" width="150" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="11" id="5vq-K1-f0O"/>
+                            <constraint firstAttribute="width" constant="150" id="CT3-Mz-U3J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Ftf-vo-XAo" firstAttribute="centerY" secondItem="JA5-g5-ZwC" secondAttribute="centerY" id="4D8-oP-VwO"/>
+                    <constraint firstAttribute="trailing" secondItem="raR-at-bYZ" secondAttribute="trailing" constant="15" id="9eE-We-5C7"/>
+                    <constraint firstItem="O6c-ct-jkd" firstAttribute="leading" secondItem="JA5-g5-ZwC" secondAttribute="trailing" constant="11" id="JWJ-dB-vcl"/>
+                    <constraint firstItem="raR-at-bYZ" firstAttribute="leading" secondItem="Ftf-vo-XAo" secondAttribute="trailing" constant="5" id="L0W-Xs-8cX"/>
+                    <constraint firstAttribute="bottom" secondItem="O6c-ct-jkd" secondAttribute="bottom" constant="10" id="Qjr-8A-0XE"/>
+                    <constraint firstItem="5rj-aM-5Ll" firstAttribute="top" secondItem="O6c-ct-jkd" secondAttribute="bottom" constant="5" id="Wdl-it-iLW"/>
+                    <constraint firstItem="JA5-g5-ZwC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="avY-dv-bV3"/>
+                    <constraint firstItem="JA5-g5-ZwC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="25" id="bbZ-mI-bxg"/>
+                    <constraint firstAttribute="bottom" secondItem="JA5-g5-ZwC" secondAttribute="bottom" constant="7" id="eFw-QG-oJC"/>
+                    <constraint firstItem="O6c-ct-jkd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="13" id="gtL-SY-Sa7"/>
+                    <constraint firstItem="raR-at-bYZ" firstAttribute="centerY" secondItem="JA5-g5-ZwC" secondAttribute="centerY" id="j0S-SR-6VK"/>
+                    <constraint firstItem="5rj-aM-5Ll" firstAttribute="leading" secondItem="O6c-ct-jkd" secondAttribute="leading" id="v7e-WG-bvc"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="Qjr-8A-0XE"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="JA5-g5-ZwC" id="V6X-Qh-E8x"/>
+                <outlet property="introduceLabel" destination="5rj-aM-5Ll" id="daS-01-wY3"/>
+                <outlet property="nameLabel" destination="O6c-ct-jkd" id="AVx-hj-4Vi"/>
+                <outlet property="priceLabel" destination="Ftf-vo-XAo" id="WYu-Hf-8lf"/>
+            </connections>
+            <point key="canvasLocation" x="248.5" y="313"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="iconfont-dingzhi-jiantou" width="13" height="13"/>
+        <image name="photo-dingzhi" width="46" height="46"/>
+    </resources>
+</document>

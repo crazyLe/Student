@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="97" id="KGk-i7-Jjw" customClass="AutoDeleteCell">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="97"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="96"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eSD-Zp-aAp">
+                        <rect key="frame" x="20" y="43" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="i50-ve-6cS"/>
+                            <constraint firstAttribute="width" constant="10" id="wfB-QU-bcc"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CcT-cM-U3z">
+                        <rect key="frame" x="45" y="39" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCw-1L-kWG">
+                        <rect key="frame" x="290" y="32" width="51" height="31"/>
+                        <color key="onTintColor" red="1" green="0.16379678980000001" blue="0.16094900130000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CcT-cM-U3z" firstAttribute="leading" secondItem="eSD-Zp-aAp" secondAttribute="trailing" constant="15" id="GZl-u9-I3W"/>
+                    <constraint firstItem="eSD-Zp-aAp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Jt6-nA-5N2"/>
+                    <constraint firstItem="CcT-cM-U3z" firstAttribute="centerY" secondItem="eSD-Zp-aAp" secondAttribute="centerY" id="Yuf-CM-6li"/>
+                    <constraint firstAttribute="trailing" secondItem="iCw-1L-kWG" secondAttribute="trailing" constant="20" id="dZH-Vp-UA8"/>
+                    <constraint firstItem="eSD-Zp-aAp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="oqb-D9-HeG"/>
+                    <constraint firstItem="iCw-1L-kWG" firstAttribute="centerY" secondItem="CcT-cM-U3z" secondAttribute="centerY" id="zJt-1M-I8A"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="autoDeleteSwitch" destination="iCw-1L-kWG" id="NRC-u4-9Im"/>
+                <outlet property="colorImgView" destination="eSD-Zp-aAp" id="b40-Je-J7B"/>
+                <outlet property="titleLab" destination="CcT-cM-U3z" id="Qpj-J6-Nm6"/>
+            </connections>
+            <point key="canvasLocation" x="296.5" y="337.5"/>
+        </tableViewCell>
+    </objects>
+</document>

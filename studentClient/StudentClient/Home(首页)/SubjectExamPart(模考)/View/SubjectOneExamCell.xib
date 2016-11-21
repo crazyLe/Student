@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SubjectOneExamCell" rowHeight="350" id="KGk-i7-Jjw" customClass="SubjectOneExamCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="570"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="569.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WCh-Gp-tkv">
+                        <rect key="frame" x="10" y="10" width="355" height="519"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="考试题库" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3C-Es-ncM">
+                        <rect key="frame" x="50" y="130" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="考试时间" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMb-Gy-3c2">
+                        <rect key="frame" x="50" y="173" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="合格标准" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nva-ZR-XbD">
+                        <rect key="frame" x="50" y="216" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="出题规则" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iin-lp-4kt">
+                        <rect key="frame" x="50" y="259" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="考试规则" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czb-bS-Syg">
+                        <rect key="frame" x="50" y="302" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="全国通用(小车)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUl-A9-TWL">
+                        <rect key="frame" x="224" y="130" width="101" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="45分钟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGi-YW-PcR">
+                        <rect key="frame" x="276" y="173" width="49" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="满分100分,90分及格" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNL-X3-GMf">
+                        <rect key="frame" x="172" y="216" width="153" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" misplaced="YES" text="科目一考试答题后不能修改答案,每做一题,系统自动计算错题数量,如累计错题数量超过11题(共100题),系统会自动提交答案,本次考试不通过!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mpv-Lq-KMK">
+                        <rect key="frame" x="135" y="302" width="190" height="90"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycG-SH-GMB">
+                        <rect key="frame" x="113" y="417" width="150" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2hO-wW-khH"/>
+                            <constraint firstAttribute="width" constant="150" id="OLv-f6-j28"/>
+                        </constraints>
+                        <state key="normal" title="Button" backgroundImage="科一模考首页矩形图"/>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6eb-gU-e7W">
+                        <rect key="frame" x="50" y="160" width="275" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="hlt-i5-nd0"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="B3X-by-XU2">
+                        <rect key="frame" x="50" y="203" width="275" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="1Tw-Lr-d3w"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lY-8d-fki">
+                        <rect key="frame" x="50" y="246" width="275" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="J6m-w5-TKc"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0nc-rg-2ak">
+                        <rect key="frame" x="50" y="289" width="275" height="1"/>
+                        <color key="backgroundColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="zjD-VK-1hD"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="模拟真实考试" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5q-Vk-Lak">
+                        <rect key="frame" x="235" y="259" width="90" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iNL-X3-GMf" firstAttribute="centerY" secondItem="nva-ZR-XbD" secondAttribute="centerY" id="4Cm-pq-8IX"/>
+                    <constraint firstAttribute="trailing" secondItem="pGi-YW-PcR" secondAttribute="trailing" constant="50" id="6zJ-GR-0Cx"/>
+                    <constraint firstItem="B3X-by-XU2" firstAttribute="trailing" secondItem="6eb-gU-e7W" secondAttribute="trailing" id="8JM-37-EQx"/>
+                    <constraint firstItem="ycG-SH-GMB" firstAttribute="top" secondItem="Mpv-Lq-KMK" secondAttribute="bottom" constant="25" id="8rl-Eq-SXR"/>
+                    <constraint firstItem="iin-lp-4kt" firstAttribute="leading" secondItem="nva-ZR-XbD" secondAttribute="leading" id="AH4-8l-4W7"/>
+                    <constraint firstItem="iin-lp-4kt" firstAttribute="top" secondItem="nva-ZR-XbD" secondAttribute="bottom" constant="25" id="AMA-tI-Jc1"/>
+                    <constraint firstAttribute="trailing" secondItem="iNL-X3-GMf" secondAttribute="trailing" constant="50" id="AwA-nx-PSH"/>
+                    <constraint firstItem="JUl-A9-TWL" firstAttribute="trailing" secondItem="6eb-gU-e7W" secondAttribute="trailing" id="CVE-tn-Ckf"/>
+                    <constraint firstItem="JUl-A9-TWL" firstAttribute="centerY" secondItem="V3C-Es-ncM" secondAttribute="centerY" id="CYA-7V-8Zv"/>
+                    <constraint firstItem="JMb-Gy-3c2" firstAttribute="top" secondItem="V3C-Es-ncM" secondAttribute="bottom" constant="25" id="Dtp-eV-C7y"/>
+                    <constraint firstItem="ycG-SH-GMB" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="DuG-B4-2E2"/>
+                    <constraint firstItem="Mpv-Lq-KMK" firstAttribute="leading" secondItem="czb-bS-Syg" secondAttribute="trailing" constant="25" id="Elm-hq-3IM"/>
+                    <constraint firstItem="Mpv-Lq-KMK" firstAttribute="top" secondItem="czb-bS-Syg" secondAttribute="top" id="HBE-nI-M8x"/>
+                    <constraint firstItem="8lY-8d-fki" firstAttribute="top" secondItem="iNL-X3-GMf" secondAttribute="bottom" constant="12" id="Huc-cw-LmC"/>
+                    <constraint firstItem="6eb-gU-e7W" firstAttribute="leading" secondItem="V3C-Es-ncM" secondAttribute="leading" id="Ln0-Rd-Z4u"/>
+                    <constraint firstItem="pGi-YW-PcR" firstAttribute="centerY" secondItem="JMb-Gy-3c2" secondAttribute="centerY" id="RFJ-DL-VKz"/>
+                    <constraint firstItem="8lY-8d-fki" firstAttribute="trailing" secondItem="B3X-by-XU2" secondAttribute="trailing" id="RnD-zV-6P1"/>
+                    <constraint firstItem="6eb-gU-e7W" firstAttribute="top" secondItem="JUl-A9-TWL" secondAttribute="bottom" constant="12" id="S4b-fB-CcL"/>
+                    <constraint firstAttribute="trailing" secondItem="g5q-Vk-Lak" secondAttribute="trailing" constant="50" id="TDE-s6-si5"/>
+                    <constraint firstAttribute="trailing" secondItem="WCh-Gp-tkv" secondAttribute="trailing" constant="10" id="VMj-aG-itU"/>
+                    <constraint firstItem="6eb-gU-e7W" firstAttribute="top" secondItem="JUl-A9-TWL" secondAttribute="bottom" constant="12" id="XFf-eP-UxS"/>
+                    <constraint firstItem="nva-ZR-XbD" firstAttribute="top" secondItem="JMb-Gy-3c2" secondAttribute="bottom" constant="25" id="XrS-82-VX7"/>
+                    <constraint firstItem="B3X-by-XU2" firstAttribute="top" secondItem="pGi-YW-PcR" secondAttribute="bottom" constant="12" id="atX-Jo-rnZ"/>
+                    <constraint firstItem="czb-bS-Syg" firstAttribute="leading" secondItem="iin-lp-4kt" secondAttribute="leading" id="bJF-0h-9hH"/>
+                    <constraint firstItem="WCh-Gp-tkv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="cIl-LM-fJh"/>
+                    <constraint firstItem="V3C-Es-ncM" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="50" id="e1B-6O-z4W"/>
+                    <constraint firstItem="WCh-Gp-tkv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="eiL-24-GMn"/>
+                    <constraint firstAttribute="bottom" secondItem="WCh-Gp-tkv" secondAttribute="bottom" constant="40" id="feG-NB-XvO"/>
+                    <constraint firstItem="0nc-rg-2ak" firstAttribute="trailing" secondItem="8lY-8d-fki" secondAttribute="trailing" id="i0T-QK-OIc"/>
+                    <constraint firstAttribute="trailing" secondItem="Mpv-Lq-KMK" secondAttribute="trailing" constant="50" id="jxT-bj-ggo"/>
+                    <constraint firstItem="nva-ZR-XbD" firstAttribute="leading" secondItem="JMb-Gy-3c2" secondAttribute="leading" id="kAh-tb-Rz1"/>
+                    <constraint firstItem="B3X-by-XU2" firstAttribute="leading" secondItem="6eb-gU-e7W" secondAttribute="leading" id="opg-ep-CaF"/>
+                    <constraint firstItem="0nc-rg-2ak" firstAttribute="leading" secondItem="8lY-8d-fki" secondAttribute="leading" id="q2F-TM-USt"/>
+                    <constraint firstItem="g5q-Vk-Lak" firstAttribute="centerY" secondItem="iin-lp-4kt" secondAttribute="centerY" id="qM0-2u-gK5"/>
+                    <constraint firstItem="V3C-Es-ncM" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="130" id="rOb-4c-6Gb"/>
+                    <constraint firstItem="czb-bS-Syg" firstAttribute="top" secondItem="iin-lp-4kt" secondAttribute="bottom" constant="25" id="rZG-Km-KWO"/>
+                    <constraint firstItem="8lY-8d-fki" firstAttribute="leading" secondItem="B3X-by-XU2" secondAttribute="leading" id="sLH-4T-0DZ"/>
+                    <constraint firstItem="JMb-Gy-3c2" firstAttribute="leading" secondItem="V3C-Es-ncM" secondAttribute="leading" id="sPf-56-2lu"/>
+                    <constraint firstItem="0nc-rg-2ak" firstAttribute="top" secondItem="g5q-Vk-Lak" secondAttribute="bottom" constant="12" id="sVD-4y-6mw"/>
+                    <constraint firstAttribute="trailing" secondItem="JUl-A9-TWL" secondAttribute="trailing" constant="50" id="sed-as-qy7"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="bgImageView" destination="WCh-Gp-tkv" id="AIn-Qs-lGp"/>
+                <outlet property="examBankLab" destination="V3C-Es-ncM" id="Rtk-6G-FCc"/>
+                <outlet property="examBankLab1" destination="JUl-A9-TWL" id="1QE-PW-QxL"/>
+                <outlet property="examRuleLab" destination="czb-bS-Syg" id="Ai6-6j-aPv"/>
+                <outlet property="examRuleLab1" destination="Mpv-Lq-KMK" id="XzU-wJ-d6b"/>
+                <outlet property="examTimeLab" destination="JMb-Gy-3c2" id="bQg-O5-W48"/>
+                <outlet property="examTimeLab1" destination="pGi-YW-PcR" id="poa-8R-1if"/>
+                <outlet property="lineViewFour" destination="0nc-rg-2ak" id="qUq-Uq-c7G"/>
+                <outlet property="lineViewOne" destination="6eb-gU-e7W" id="FUA-Qh-bQ5"/>
+                <outlet property="lineViewThree" destination="8lY-8d-fki" id="jjV-IA-Nf6"/>
+                <outlet property="lineViewTwo" destination="B3X-by-XU2" id="tGS-xe-4hu"/>
+                <outlet property="questionRuleLab" destination="iin-lp-4kt" id="py5-l6-Nz3"/>
+                <outlet property="questionRuleLab1" destination="g5q-Vk-Lak" id="Izl-MM-0Yw"/>
+                <outlet property="standardLab" destination="nva-ZR-XbD" id="wWr-WQ-mOH"/>
+                <outlet property="standardLab1" destination="iNL-X3-GMf" id="3QX-Xi-3Ph"/>
+                <outlet property="startExamBtn" destination="ycG-SH-GMB" id="Gg9-qJ-22A"/>
+            </connections>
+            <point key="canvasLocation" x="230.5" y="263"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="科一模考首页矩形图" width="206" height="52"/>
+    </resources>
+</document>

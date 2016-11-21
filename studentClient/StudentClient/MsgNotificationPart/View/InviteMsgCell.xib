@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="InviteMsgCell" rowHeight="213" id="XWS-Og-uld" customClass="InviteMsgCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="XWS-Og-uld" id="h1p-Ed-vDL">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="212"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="招生团消息" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wVr-pR-F9M">
+                        <rect key="frame" x="14" y="17" width="80" height="20"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-02-02 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oRL-NY-U1V">
+                        <rect key="frame" x="14" y="41" width="73" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="张小卡教练邀请您加入他的招生团" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erN-M0-Hdm">
+                        <rect key="frame" x="14" y="66" width="292" height="91"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qp4-sf-Ac3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="8"/>
+                        <color key="backgroundColor" red="0.47843137254901957" green="0.80000000000000004" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="k5r-XY-A3o"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="68f-UY-VKD">
+                        <rect key="frame" x="82" y="171" width="60" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="接受">
+                            <color key="titleColor" red="0.47843137250000001" green="0.80000000000000004" blue="0.1137254902" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="agreeBtnClick:" destination="XWS-Og-uld" eventType="touchUpInside" id="KZj-Qz-IxE"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0LU-ha-vKz">
+                        <rect key="frame" x="14" y="171" width="60" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="26" id="qpc-Vl-9LG"/>
+                            <constraint firstAttribute="width" constant="60" id="tHy-No-qL9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="拒绝">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="rejectBtnClick:" destination="XWS-Og-uld" eventType="touchUpInside" id="iUA-Rf-AS5"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="qp4-sf-Ac3" firstAttribute="leading" secondItem="h1p-Ed-vDL" secondAttribute="leading" id="4Au-aT-YMV"/>
+                    <constraint firstItem="qp4-sf-Ac3" firstAttribute="top" secondItem="h1p-Ed-vDL" secondAttribute="top" id="J8w-ik-JpK"/>
+                    <constraint firstItem="oRL-NY-U1V" firstAttribute="top" secondItem="wVr-pR-F9M" secondAttribute="bottom" constant="4" id="JLG-qu-kJl"/>
+                    <constraint firstItem="0LU-ha-vKz" firstAttribute="leading" secondItem="wVr-pR-F9M" secondAttribute="leading" id="KMp-Qy-Knr"/>
+                    <constraint firstItem="68f-UY-VKD" firstAttribute="centerY" secondItem="0LU-ha-vKz" secondAttribute="centerY" id="Lk6-YT-LPh"/>
+                    <constraint firstAttribute="bottom" secondItem="erN-M0-Hdm" secondAttribute="bottom" constant="17" id="N6n-jr-21Y"/>
+                    <constraint firstItem="oRL-NY-U1V" firstAttribute="leading" secondItem="wVr-pR-F9M" secondAttribute="leading" id="RyC-P6-fHd"/>
+                    <constraint firstItem="wVr-pR-F9M" firstAttribute="leading" secondItem="h1p-Ed-vDL" secondAttribute="leading" constant="14" id="SnQ-D9-Kd0"/>
+                    <constraint firstAttribute="trailing" secondItem="qp4-sf-Ac3" secondAttribute="trailing" id="TdQ-Dv-Hum"/>
+                    <constraint firstItem="68f-UY-VKD" firstAttribute="width" secondItem="0LU-ha-vKz" secondAttribute="width" id="Tgs-Y8-zx8"/>
+                    <constraint firstAttribute="bottom" secondItem="0LU-ha-vKz" secondAttribute="bottom" constant="15" id="TmF-lg-sbh"/>
+                    <constraint firstItem="68f-UY-VKD" firstAttribute="leading" secondItem="0LU-ha-vKz" secondAttribute="trailing" constant="8" id="XOm-g1-npF"/>
+                    <constraint firstItem="erN-M0-Hdm" firstAttribute="leading" secondItem="wVr-pR-F9M" secondAttribute="leading" id="XYP-HR-OeI"/>
+                    <constraint firstAttribute="trailing" secondItem="erN-M0-Hdm" secondAttribute="trailing" constant="14" id="ZJy-Zf-kge"/>
+                    <constraint firstItem="erN-M0-Hdm" firstAttribute="top" secondItem="oRL-NY-U1V" secondAttribute="bottom" constant="10" id="di1-UF-6vH"/>
+                    <constraint firstItem="68f-UY-VKD" firstAttribute="height" secondItem="0LU-ha-vKz" secondAttribute="height" id="hAL-uL-Rtx"/>
+                    <constraint firstItem="wVr-pR-F9M" firstAttribute="top" secondItem="h1p-Ed-vDL" secondAttribute="top" constant="17" id="hAO-G7-P0i"/>
+                    <constraint firstItem="0LU-ha-vKz" firstAttribute="top" secondItem="erN-M0-Hdm" secondAttribute="bottom" constant="14" id="vPp-F0-8hb"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="N6n-jr-21Y"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="agreeBtn" destination="68f-UY-VKD" id="Scq-fA-fg3"/>
+                <outlet property="contentLabel" destination="erN-M0-Hdm" id="Il6-2p-ODd"/>
+                <outlet property="rejectBtn" destination="0LU-ha-vKz" id="Jia-bQ-mVr"/>
+                <outlet property="timeLabel" destination="oRL-NY-U1V" id="6AT-KV-W9R"/>
+            </connections>
+            <point key="canvasLocation" x="-23" y="304.5"/>
+        </tableViewCell>
+    </objects>
+</document>

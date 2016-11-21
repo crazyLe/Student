@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PartnerTrainSuccessCell" rowHeight="329" id="KGk-i7-Jjw" customClass="PartnerTrainSuccessCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="329"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="328"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="圆角矩形-1" translatesAutoresizingMaskIntoConstraints="NO" id="Bpc-R6-oft">
+                        <rect key="frame" x="40" y="30" width="270" height="298"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="订单结果2" translatesAutoresizingMaskIntoConstraints="NO" id="9OJ-rr-t4i">
+                        <rect key="frame" x="59" y="42" width="46" height="46"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="46" id="Xet-Eb-O5s"/>
+                            <constraint firstAttribute="height" constant="46" id="if0-gf-dvM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="请根据订单时间至张小开教练处报道，教练：张小开  电话:18566776688" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5J4-aG-Ip7">
+                        <rect key="frame" x="113" y="64" width="177" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="erweima" translatesAutoresizingMaskIntoConstraints="NO" id="Qs1-C6-1Z5">
+                        <rect key="frame" x="113" y="115" width="122" height="122"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Qs1-C6-1Z5" secondAttribute="height" multiplier="1:1" id="DnU-zb-Zat"/>
+                            <constraint firstAttribute="width" constant="122" id="d9E-6e-68j"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4587 5986 5482 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dhY-I3-8bn">
+                        <rect key="frame" x="113" y="241" width="177" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Dhz-ch-44S"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" text="预约成功" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PEY-08-N2y">
+                        <rect key="frame" x="113" y="42" width="60" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.36862745098039218" green="0.70980392156862748" blue="0.99215686274509807" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="9OJ-rr-t4i" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="42" id="52u-Af-g2H"/>
+                    <constraint firstItem="Qs1-C6-1Z5" firstAttribute="top" secondItem="5J4-aG-Ip7" secondAttribute="bottom" constant="4" id="AuW-NX-X3z"/>
+                    <constraint firstItem="5J4-aG-Ip7" firstAttribute="leading" secondItem="PEY-08-N2y" secondAttribute="leading" id="BnC-lX-Q6Y"/>
+                    <constraint firstItem="PEY-08-N2y" firstAttribute="leading" secondItem="9OJ-rr-t4i" secondAttribute="trailing" constant="8" id="EMv-Ei-Wzc"/>
+                    <constraint firstItem="9OJ-rr-t4i" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="59" id="Hdr-w4-cse"/>
+                    <constraint firstItem="Bpc-R6-oft" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="LJb-p4-HU0"/>
+                    <constraint firstAttribute="trailing" secondItem="5J4-aG-Ip7" secondAttribute="trailing" constant="30" id="M1Y-Rn-2Nn"/>
+                    <constraint firstAttribute="bottom" secondItem="Bpc-R6-oft" secondAttribute="bottom" id="Ogn-et-crW"/>
+                    <constraint firstItem="Qs1-C6-1Z5" firstAttribute="top" secondItem="5J4-aG-Ip7" secondAttribute="bottom" constant="4" id="Puv-JP-84E"/>
+                    <constraint firstItem="5J4-aG-Ip7" firstAttribute="top" secondItem="PEY-08-N2y" secondAttribute="bottom" constant="4" id="UK0-Nc-T1q"/>
+                    <constraint firstItem="Qs1-C6-1Z5" firstAttribute="leading" secondItem="5J4-aG-Ip7" secondAttribute="leading" id="Xbq-ck-M44"/>
+                    <constraint firstItem="dhY-I3-8bn" firstAttribute="top" secondItem="Qs1-C6-1Z5" secondAttribute="bottom" constant="4" id="a2F-5A-Lzi"/>
+                    <constraint firstItem="dhY-I3-8bn" firstAttribute="leading" secondItem="Qs1-C6-1Z5" secondAttribute="leading" id="cE6-b8-FwT"/>
+                    <constraint firstAttribute="trailing" secondItem="Bpc-R6-oft" secondAttribute="trailing" constant="10" id="fsl-cJ-3yh"/>
+                    <constraint firstItem="Bpc-R6-oft" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="khX-O0-hZD"/>
+                    <constraint firstAttribute="trailing" secondItem="dhY-I3-8bn" secondAttribute="trailing" constant="30" id="o8R-tC-pio"/>
+                    <constraint firstItem="PEY-08-N2y" firstAttribute="top" secondItem="9OJ-rr-t4i" secondAttribute="top" id="pdf-wo-JuH"/>
+                    <constraint firstAttribute="bottom" secondItem="dhY-I3-8bn" secondAttribute="bottom" constant="20" id="tmn-Bh-HFT"/>
+                    <constraint firstItem="dhY-I3-8bn" firstAttribute="bottom" secondItem="Bpc-R6-oft" secondAttribute="bottom" constant="-15" id="vfS-sH-vqS"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="tmn-Bh-HFT"/>
+                        <exclude reference="vfS-sH-vqS"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headLabel" destination="PEY-08-N2y" id="9Bz-ec-ga0"/>
+            </connections>
+            <point key="canvasLocation" x="232" y="285.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="erweima" width="146" height="145"/>
+        <image name="圆角矩形-1" width="343" height="245"/>
+        <image name="订单结果2" width="44" height="44"/>
+    </resources>
+</document>

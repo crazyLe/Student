@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CircleHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="学员--头条" translatesAutoresizingMaskIntoConstraints="NO" id="jyA-QW-Akw">
+                    <rect key="frame" x="10" y="11" width="62" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="62" id="Igh-Cv-idh"/>
+                        <constraint firstAttribute="height" constant="49" id="LNY-Yc-dYO"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最美学员投票排行公布" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-JL-jlm">
+                    <rect key="frame" x="80" y="11" width="232" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="最美学员投票排行公布最美学员投票排行公布最美学员投票排行公布最美学员投票排行公布最美学员投票排行公布最美学员投票排行公布最美学员投票排行公布" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eQs-zK-x10">
+                    <rect key="frame" x="80" y="33" width="232" height="33"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZE-ZA-cUd">
+                    <rect key="frame" x="0.0" y="73" width="80" height="1"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.36862745098039218" blue="0.36470588235294116" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="4U0-w7-4sB"/>
+                        <constraint firstAttribute="height" constant="1" id="AQs-J2-hFl"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PVQ-Ib-Jdc">
+                    <rect key="frame" x="80" y="73" width="240" height="1"/>
+                    <color key="backgroundColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="dJP-cX-MZS"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jyA-QW-Akw" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="11" id="4Cx-JI-Rae"/>
+                <constraint firstItem="eQs-zK-x10" firstAttribute="trailing" secondItem="ecg-JL-jlm" secondAttribute="trailing" id="5yq-oU-f2P"/>
+                <constraint firstItem="ecg-JL-jlm" firstAttribute="leading" secondItem="jyA-QW-Akw" secondAttribute="trailing" constant="8" id="BZW-FA-I12"/>
+                <constraint firstItem="kZE-ZA-cUd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CAc-MQ-5Fk"/>
+                <constraint firstItem="jyA-QW-Akw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="JBo-XU-pg6"/>
+                <constraint firstAttribute="trailing" secondItem="PVQ-Ib-Jdc" secondAttribute="trailing" id="P3O-o2-Frz"/>
+                <constraint firstAttribute="bottom" secondItem="PVQ-Ib-Jdc" secondAttribute="bottom" id="TQD-nv-aYX"/>
+                <constraint firstItem="ecg-JL-jlm" firstAttribute="top" secondItem="jyA-QW-Akw" secondAttribute="top" id="TVm-ux-oOc"/>
+                <constraint firstItem="eQs-zK-x10" firstAttribute="leading" secondItem="ecg-JL-jlm" secondAttribute="leading" id="b4y-Lu-W6J"/>
+                <constraint firstItem="eQs-zK-x10" firstAttribute="top" secondItem="ecg-JL-jlm" secondAttribute="bottom" constant="4" id="fPq-3g-gyp"/>
+                <constraint firstAttribute="trailing" secondItem="ecg-JL-jlm" secondAttribute="trailing" constant="8" id="iPr-h0-sIb"/>
+                <constraint firstAttribute="bottom" secondItem="kZE-ZA-cUd" secondAttribute="bottom" id="ibM-Lh-tQj"/>
+                <constraint firstItem="PVQ-Ib-Jdc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="80" id="p0G-lS-fFh"/>
+                <constraint firstAttribute="bottom" secondItem="eQs-zK-x10" secondAttribute="bottom" constant="8" id="r1B-N4-ieP"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="subTitleLabel" destination="eQs-zK-x10" id="hjY-YJ-CFq"/>
+                <outlet property="titleLabel" destination="ecg-JL-jlm" id="s3f-jW-Auo"/>
+            </connections>
+            <point key="canvasLocation" x="82" y="157"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="学员--头条" width="62" height="49"/>
+    </resources>
+</document>

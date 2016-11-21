@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PayFailController">
+            <connections>
+                <outlet property="introLabel" destination="wnB-sS-wwX" id="paF-Z6-65c"/>
+                <outlet property="subTitleLabel" destination="EBe-N5-AuF" id="c31-iM-DbK"/>
+                <outlet property="titleLabel" destination="AOe-Gr-Ult" id="6EF-Jg-a2N"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="paE-X5-qmf">
+                    <frame key="frameInset" width="320" height="216"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="iconfont-kulian" translatesAutoresizingMaskIntoConstraints="NO" id="jzs-Vy-C3d">
+                            <frame key="frameInset" minX="86" minY="68" width="49" height="49"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="49" id="IjI-sW-IlG"/>
+                                <constraint firstAttribute="width" constant="49" id="P2S-sA-ZP7"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="支付失败" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AOe-Gr-Ult">
+                            <frame key="frameInset" minX="143" minY="74" width="60" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="不明原因导致支付异常" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBe-N5-AuF">
+                            <frame key="frameInset" minX="143" minY="98" width="120" height="15"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="请至个人中心查看账户余额或订单信息再重新支付。如有疑问请致电客服电话400-800 -6533" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnB-sS-wwX">
+                            <frame key="frameInset" minX="16" minY="168" width="288" height="32"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                            <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="jzs-Vy-C3d" firstAttribute="top" secondItem="paE-X5-qmf" secondAttribute="top" constant="68" id="HQi-O5-Uvb"/>
+                        <constraint firstItem="jzs-Vy-C3d" firstAttribute="centerX" secondItem="paE-X5-qmf" secondAttribute="centerX" constant="-50" id="NMn-43-yjz"/>
+                        <constraint firstAttribute="height" constant="216" id="Nge-7V-1dg"/>
+                        <constraint firstItem="AOe-Gr-Ult" firstAttribute="top" secondItem="jzs-Vy-C3d" secondAttribute="top" constant="6" id="RpA-fo-1so"/>
+                        <constraint firstItem="EBe-N5-AuF" firstAttribute="leading" secondItem="AOe-Gr-Ult" secondAttribute="leading" id="TbF-8P-eZs"/>
+                        <constraint firstAttribute="trailing" secondItem="wnB-sS-wwX" secondAttribute="trailing" constant="16" id="XCs-bb-lsM"/>
+                        <constraint firstItem="EBe-N5-AuF" firstAttribute="top" secondItem="AOe-Gr-Ult" secondAttribute="bottom" constant="6" id="cSh-TK-ATJ"/>
+                        <constraint firstItem="wnB-sS-wwX" firstAttribute="leading" secondItem="paE-X5-qmf" secondAttribute="leading" constant="16" id="d1b-Q8-nym"/>
+                        <constraint firstItem="jzs-Vy-C3d" firstAttribute="leading" secondItem="paE-X5-qmf" secondAttribute="leading" constant="83" id="hQi-LI-h4w"/>
+                        <constraint firstAttribute="bottom" secondItem="wnB-sS-wwX" secondAttribute="bottom" constant="16" id="oFv-ZZ-NMi"/>
+                        <constraint firstItem="AOe-Gr-Ult" firstAttribute="leading" secondItem="jzs-Vy-C3d" secondAttribute="trailing" constant="8" id="wjT-dU-24t"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="hQi-LI-h4w"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="paE-X5-qmf" secondAttribute="trailing" id="CX4-F5-LY0"/>
+                <constraint firstItem="paE-X5-qmf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aIM-XV-zi2"/>
+                <constraint firstItem="paE-X5-qmf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="mda-Js-ay2"/>
+            </constraints>
+            <point key="canvasLocation" x="-19" y="205"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-kulian" width="52" height="52"/>
+    </resources>
+</document>

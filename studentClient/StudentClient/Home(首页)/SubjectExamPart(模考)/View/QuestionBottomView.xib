@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="QuestionBottomView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="这题太坑了，来吐槽一下吧~" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5PR-FE-YhX">
+                    <rect key="frame" x="8" y="11" width="232" height="28"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OjE-yN-7LS">
+                    <rect key="frame" x="248" y="11" width="64" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="64" id="Nky-Rm-1dc"/>
+                        <constraint firstAttribute="height" constant="28" id="Y8Z-cT-tXl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" image="iconfont-shangchengxitongtubiaozitihuayuanwenjian70">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="tucaoBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="j8l-k4-6sL"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E8B-G3-bYi">
+                    <rect key="frame" x="13" y="15" width="60" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="1/1316" image="iconfont-caidan">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="edgeInsetsStyle">
+                            <integer key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="imageTitleSpace">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="questionHudBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="pca-10-E4Z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x1E-Y8-ErU">
+                    <rect key="frame" x="93" y="15" width="43" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="126" image="iconfont-zhengque">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="edgeInsetsStyle">
+                            <integer key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="imageTitleSpace">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yuo-pD-TB4">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="2fm-Te-afj"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nbu-KJ-xka">
+                    <rect key="frame" x="156" y="15" width="37" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <state key="normal" title="25" image="iconfont-cuowu22">
+                        <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="OjE-yN-7LS" firstAttribute="height" secondItem="5PR-FE-YhX" secondAttribute="height" id="0H8-Ih-UNU"/>
+                <constraint firstItem="5PR-FE-YhX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Dhu-XF-81S"/>
+                <constraint firstItem="Yuo-pD-TB4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ifd-og-qHh"/>
+                <constraint firstAttribute="trailing" secondItem="OjE-yN-7LS" secondAttribute="trailing" constant="8" id="KAF-GF-N3X"/>
+                <constraint firstItem="OjE-yN-7LS" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="MkY-Wp-GR7"/>
+                <constraint firstItem="Nbu-KJ-xka" firstAttribute="centerY" secondItem="E8B-G3-bYi" secondAttribute="centerY" id="R79-Ka-Ri1"/>
+                <constraint firstItem="E8B-G3-bYi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="X0U-gU-kFz"/>
+                <constraint firstAttribute="trailing" secondItem="Yuo-pD-TB4" secondAttribute="trailing" id="YaP-Rk-E4q"/>
+                <constraint firstItem="OjE-yN-7LS" firstAttribute="leading" secondItem="5PR-FE-YhX" secondAttribute="trailing" constant="8" id="a76-LC-3zC"/>
+                <constraint firstItem="OjE-yN-7LS" firstAttribute="centerY" secondItem="5PR-FE-YhX" secondAttribute="centerY" id="ayN-QP-td0"/>
+                <constraint firstItem="Nbu-KJ-xka" firstAttribute="leading" secondItem="x1E-Y8-ErU" secondAttribute="trailing" constant="20" id="gxf-Q0-ogO"/>
+                <constraint firstItem="E8B-G3-bYi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="13" id="kfO-wW-S2G"/>
+                <constraint firstItem="Yuo-pD-TB4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="nB5-zJ-D4k"/>
+                <constraint firstItem="x1E-Y8-ErU" firstAttribute="leading" secondItem="E8B-G3-bYi" secondAttribute="trailing" constant="20" id="oAs-qj-acC"/>
+                <constraint firstItem="x1E-Y8-ErU" firstAttribute="centerY" secondItem="E8B-G3-bYi" secondAttribute="centerY" id="oJW-ZZ-wyg"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="correctBtn" destination="x1E-Y8-ErU" id="8CK-4W-hr7"/>
+                <outlet property="correctBtnLeftPaddingConstraint" destination="oAs-qj-acC" id="h7p-Sk-74e"/>
+                <outlet property="incorrectBtn" destination="Nbu-KJ-xka" id="qDm-ir-4bn"/>
+                <outlet property="inputTextField" destination="5PR-FE-YhX" id="Gdo-7J-exq"/>
+                <outlet property="questionHudBtn" destination="E8B-G3-bYi" id="rIa-Gt-N3n"/>
+                <outlet property="tuCaoBtn" destination="OjE-yN-7LS" id="r3y-HV-TP5"/>
+            </connections>
+            <point key="canvasLocation" x="236" y="181"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="iconfont-caidan" width="21" height="21"/>
+        <image name="iconfont-cuowu22" width="21" height="21"/>
+        <image name="iconfont-shangchengxitongtubiaozitihuayuanwenjian70" width="83" height="35"/>
+        <image name="iconfont-zhengque" width="21" height="21"/>
+    </resources>
+</document>

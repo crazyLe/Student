@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="OrderItemView">
+            <rect key="frame" x="0.0" y="0.0" width="183" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="一共可预约:5名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="agm-Cp-a1i">
+                    <rect key="frame" x="0.0" y="25" width="183" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.62745098039215685" green="0.77647058823529413" blue="0.89411764705882346" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="剩余名额:2名" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Us2-EY-xoQ">
+                    <rect key="frame" x="0.0" y="43" width="183" height="19"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.62745098040000002" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="07:00-08:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PUl-Vp-Vqf">
+                    <rect key="frame" x="0.0" y="0.0" width="183" height="25"/>
+                    <color key="backgroundColor" red="0.69411764705882351" green="0.82352941176470584" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="Chj-vp-CoU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥50" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzI-Cd-naY">
+                    <rect key="frame" x="0.0" y="62" width="183" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.62745098040000002" green="0.77647058820000003" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="PUl-Vp-Vqf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="0DI-FX-M9x"/>
+                <constraint firstAttribute="trailing" secondItem="HzI-Cd-naY" secondAttribute="trailing" id="1LP-LG-ICk"/>
+                <constraint firstItem="HzI-Cd-naY" firstAttribute="height" secondItem="agm-Cp-a1i" secondAttribute="height" id="3Jw-GS-OzR"/>
+                <constraint firstAttribute="bottom" secondItem="HzI-Cd-naY" secondAttribute="bottom" id="6PA-Rc-etU"/>
+                <constraint firstItem="HzI-Cd-naY" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="9d6-v7-fgB"/>
+                <constraint firstItem="HzI-Cd-naY" firstAttribute="top" secondItem="Us2-EY-xoQ" secondAttribute="bottom" id="D4s-s6-Yst"/>
+                <constraint firstItem="Us2-EY-xoQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Ot1-dt-h5C"/>
+                <constraint firstItem="agm-Cp-a1i" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="VHq-G6-HaH"/>
+                <constraint firstAttribute="trailing" secondItem="agm-Cp-a1i" secondAttribute="trailing" id="cRm-fF-Hij"/>
+                <constraint firstAttribute="trailing" secondItem="Us2-EY-xoQ" secondAttribute="trailing" id="ceD-tB-gjn"/>
+                <constraint firstAttribute="trailing" secondItem="PUl-Vp-Vqf" secondAttribute="trailing" id="cz9-hR-hmy"/>
+                <constraint firstItem="Us2-EY-xoQ" firstAttribute="top" secondItem="agm-Cp-a1i" secondAttribute="bottom" id="jkv-mm-tAk"/>
+                <constraint firstItem="Us2-EY-xoQ" firstAttribute="top" secondItem="agm-Cp-a1i" secondAttribute="bottom" id="la5-Sd-Vv2"/>
+                <constraint firstItem="Us2-EY-xoQ" firstAttribute="height" secondItem="agm-Cp-a1i" secondAttribute="height" id="sMx-kq-DFS"/>
+                <constraint firstItem="agm-Cp-a1i" firstAttribute="top" secondItem="PUl-Vp-Vqf" secondAttribute="bottom" id="sWx-hR-eyp"/>
+                <constraint firstItem="PUl-Vp-Vqf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xpr-YR-wcW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="leftNumberLabel" destination="Us2-EY-xoQ" id="Wsm-Fd-adO"/>
+                <outlet property="moneyLabel" destination="HzI-Cd-naY" id="O7E-WX-PHW"/>
+                <outlet property="timeLabel" destination="PUl-Vp-Vqf" id="qQX-BB-sv8"/>
+                <outlet property="totalNumberLabel" destination="agm-Cp-a1i" id="OuU-XD-C5r"/>
+            </connections>
+            <point key="canvasLocation" x="-64.5" y="164"/>
+        </view>
+    </objects>
+</document>

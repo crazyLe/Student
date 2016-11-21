@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TopLineCell" rowHeight="50" id="KGk-i7-Jjw" customClass="TopLineCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FB8-Ll-B0w">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="DTY-91-iib"/>
+                            <constraint firstAttribute="width" constant="32" id="Sqx-Yo-W6h"/>
+                        </constraints>
+                        <state key="normal" image="图层-51"/>
+                        <connections>
+                            <action selector="moreBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="bVh-IY-Ylq"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="学员--头条" translatesAutoresizingMaskIntoConstraints="NO" id="5pI-N2-hp3">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="FBx-6D-bWD"/>
+                            <constraint firstAttribute="width" constant="33" id="I8g-sv-aY6"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fH3-8P-EUD" customClass="BBCyclingLabel">
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="28" id="591-dk-1qd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fH3-8P-EUD" firstAttribute="centerY" secondItem="5pI-N2-hp3" secondAttribute="centerY" id="3ti-yg-Smh"/>
+                    <constraint firstItem="FB8-Ll-B0w" firstAttribute="centerY" secondItem="fH3-8P-EUD" secondAttribute="centerY" id="Mau-fn-pW9"/>
+                    <constraint firstAttribute="trailing" secondItem="FB8-Ll-B0w" secondAttribute="trailing" constant="8" id="N50-kr-Gc4"/>
+                    <constraint firstItem="5pI-N2-hp3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="dMd-BK-rME"/>
+                    <constraint firstItem="5pI-N2-hp3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="goa-Os-A9a"/>
+                    <constraint firstItem="fH3-8P-EUD" firstAttribute="leading" secondItem="5pI-N2-hp3" secondAttribute="trailing" constant="8" id="rQo-4c-IEb"/>
+                    <constraint firstItem="FB8-Ll-B0w" firstAttribute="leading" secondItem="fH3-8P-EUD" secondAttribute="trailing" constant="35" id="reP-f8-HcB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cyclingLabel" destination="fH3-8P-EUD" id="erD-Gb-esl"/>
+            </connections>
+            <point key="canvasLocation" x="268" y="277"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="图层-51" width="22" height="6"/>
+        <image name="学员--头条" width="62" height="48"/>
+    </resources>
+</document>

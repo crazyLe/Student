@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MyCoachUnBindCell" rowHeight="100" id="1MO-Qc-1Ay" customClass="MyCoachUnBindCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1MO-Qc-1Ay" id="S4s-Ji-KBn">
+                <frame key="frameInset" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="科目三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MSo-jk-jVn">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y0u-mg-PZx">
+                        <color key="backgroundColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="zTm-yj-eL9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.92549019610000005" green="0.92549019610000005" blue="0.92549019610000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="暂未绑定科目三" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkt-Zj-KxG">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Soh-wa-Omp">
+                        <color key="backgroundColor" red="0.36078431372549019" green="0.71372549019607845" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="Ab9-ce-kTf"/>
+                            <constraint firstAttribute="height" constant="26" id="Gwj-gi-wvn"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="立即绑定"/>
+                        <connections>
+                            <action selector="lijiBindBtnClick:" destination="1MO-Qc-1Ay" eventType="touchUpInside" id="SZg-Vf-dsu"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pkt-Zj-KxG" firstAttribute="top" secondItem="y0u-mg-PZx" secondAttribute="bottom" constant="24" id="E9F-wX-fFy"/>
+                    <constraint firstItem="MSo-jk-jVn" firstAttribute="top" secondItem="S4s-Ji-KBn" secondAttribute="top" constant="8" id="OnK-H1-44E"/>
+                    <constraint firstItem="MSo-jk-jVn" firstAttribute="leading" secondItem="S4s-Ji-KBn" secondAttribute="leading" constant="8" id="YXA-RW-lWG"/>
+                    <constraint firstAttribute="trailing" secondItem="Soh-wa-Omp" secondAttribute="trailing" constant="8" id="YaS-XD-JCc"/>
+                    <constraint firstAttribute="trailing" secondItem="y0u-mg-PZx" secondAttribute="trailing" id="djc-mu-I9S"/>
+                    <constraint firstItem="Soh-wa-Omp" firstAttribute="centerY" secondItem="pkt-Zj-KxG" secondAttribute="centerY" id="fwB-6D-MEP"/>
+                    <constraint firstItem="y0u-mg-PZx" firstAttribute="leading" secondItem="S4s-Ji-KBn" secondAttribute="leading" id="gWR-by-QiU"/>
+                    <constraint firstItem="pkt-Zj-KxG" firstAttribute="leading" secondItem="S4s-Ji-KBn" secondAttribute="leading" constant="8" id="kxD-ST-1mV"/>
+                    <constraint firstItem="y0u-mg-PZx" firstAttribute="top" secondItem="MSo-jk-jVn" secondAttribute="bottom" constant="6" id="pX4-tJ-e4x"/>
+                    <constraint firstItem="MSo-jk-jVn" firstAttribute="leading" secondItem="S4s-Ji-KBn" secondAttribute="leading" constant="8" id="ttP-ZC-57X"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="lijiBindBtn" destination="Soh-wa-Omp" id="2M6-bR-PRn"/>
+                <outlet property="mainTitleLabel" destination="MSo-jk-jVn" id="k87-Uv-M19"/>
+                <outlet property="titleLabel" destination="pkt-Zj-KxG" id="u2r-J5-HYv"/>
+            </connections>
+            <point key="canvasLocation" x="262" y="226"/>
+        </tableViewCell>
+    </objects>
+</document>

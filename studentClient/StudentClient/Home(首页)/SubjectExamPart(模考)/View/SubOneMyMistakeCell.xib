@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="92" id="KGk-i7-Jjw" customClass="SubOneMyMistakeCell">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="91"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rec-6v-YJx">
+                        <rect key="frame" x="20" y="41" width="10" height="10"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="2na-bT-LA4"/>
+                            <constraint firstAttribute="width" constant="10" id="FjY-m7-5W3"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wgf-YO-9dm">
+                        <rect key="frame" x="334" y="37" width="36" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCr-iv-S5v">
+                        <rect key="frame" x="45" y="37" width="38" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="rec-6v-YJx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="2Em-wB-i0U"/>
+                    <constraint firstItem="rec-6v-YJx" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TMj-iF-s0z"/>
+                    <constraint firstItem="PCr-iv-S5v" firstAttribute="centerY" secondItem="rec-6v-YJx" secondAttribute="centerY" id="apJ-WN-20K"/>
+                    <constraint firstItem="Wgf-YO-9dm" firstAttribute="centerY" secondItem="PCr-iv-S5v" secondAttribute="centerY" id="ecr-Yi-9fe"/>
+                    <constraint firstItem="PCr-iv-S5v" firstAttribute="leading" secondItem="rec-6v-YJx" secondAttribute="trailing" constant="15" id="fcH-Wj-cgz"/>
+                    <constraint firstAttribute="trailing" secondItem="Wgf-YO-9dm" secondAttribute="trailing" constant="20" id="ztB-LH-6xE"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="colorImgView" destination="rec-6v-YJx" id="uq1-0f-l1h"/>
+                <outlet property="numberLab" destination="Wgf-YO-9dm" id="iXH-8r-wmT"/>
+                <outlet property="titleLab" destination="PCr-iv-S5v" id="7yc-8h-lzJ"/>
+            </connections>
+            <point key="canvasLocation" x="435" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>

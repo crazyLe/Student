@@ -1,0 +1,77 @@
+//
+//  FontTable.h
+//  学员端
+//
+//  Created by zuweizhong  on 16/7/31.
+//  Copyright © 2016年 Anhui Shengshi Kangzhuang Network Technology Development Co., Ltd. All rights reserved.
+//  常用Font表
+
+#ifndef FontTable_h
+#define FontTable_h
+
+#define Font8  [UIFont systemFontOfSize:8]
+#define Font9  [UIFont systemFontOfSize:9]
+#define Font10 [UIFont systemFontOfSize:10]
+#define Font11 [UIFont systemFontOfSize:11]
+#define Font12 [UIFont systemFontOfSize:12]
+#define Font13 [UIFont systemFontOfSize:13]
+#define Font14 [UIFont systemFontOfSize:14]
+#define Font15 [UIFont systemFontOfSize:15]
+#define Font16 [UIFont systemFontOfSize:16]
+#define Font17 [UIFont systemFontOfSize:17]
+#define Font18 [UIFont systemFontOfSize:18]
+#define Font19 [UIFont systemFontOfSize:19]
+#define Font20 [UIFont systemFontOfSize:20]
+#define Font21 [UIFont systemFontOfSize:21]
+#define Font22 [UIFont systemFontOfSize:22]
+#define Font23 [UIFont systemFontOfSize:23]
+#define Font24 [UIFont systemFontOfSize:24]
+#define Font25 [UIFont systemFontOfSize:25]
+#define Font26 [UIFont systemFontOfSize:26]
+#define Font27 [UIFont systemFontOfSize:27]
+#define Font28 [UIFont systemFontOfSize:28]
+#define Font29 [UIFont systemFontOfSize:29]
+#define Font30 [UIFont systemFontOfSize:30]
+#define Font31 [UIFont systemFontOfSize:31]
+#define Font32 [UIFont systemFontOfSize:32]
+#define Font33 [UIFont systemFontOfSize:33]
+#define Font34 [UIFont systemFontOfSize:34]
+#define Font35 [UIFont systemFontOfSize:35]
+#define Font36 [UIFont systemFontOfSize:36]
+#define Font37 [UIFont systemFontOfSize:37]
+#define Font38 [UIFont systemFontOfSize:38]
+#define Font39 [UIFont systemFontOfSize:39]
+#define Font40 [UIFont systemFontOfSize:40]
+#define Font41 [UIFont systemFontOfSize:41]
+#define Font42 [UIFont systemFontOfSize:42]
+#define Font43 [UIFont systemFontOfSize:43]
+#define Font44 [UIFont systemFontOfSize:44]
+#define Font45 [UIFont systemFontOfSize:45]
+#define Font46 [UIFont systemFontOfSize:46]
+#define Font47 [UIFont systemFontOfSize:47]
+#define Font48 [UIFont systemFontOfSize:48]
+#define Font49 [UIFont systemFontOfSize:49]
+#define Font50 [UIFont systemFontOfSize:50]
+#define Font51 [UIFont systemFontOfSize:51]
+#define Font52 [UIFont systemFontOfSize:52]
+#define Font53 [UIFont systemFontOfSize:53]
+#define Font54 [UIFont systemFontOfSize:54]
+#define Font55 [UIFont systemFontOfSize:55]
+#define Font56 [UIFont systemFontOfSize:56]
+#define Font57 [UIFont systemFontOfSize:57]
+#define Font58 [UIFont systemFontOfSize:58]
+#define Font59 [UIFont systemFontOfSize:59]
+#define Font60 [UIFont systemFontOfSize:60]
+#define Font61 [UIFont systemFontOfSize:61]
+#define Font62 [UIFont systemFontOfSize:62]
+#define Font63 [UIFont systemFontOfSize:63]
+#define Font64 [UIFont systemFontOfSize:64]
+#define Font65 [UIFont systemFontOfSize:65]
+#define Font66 [UIFont systemFontOfSize:66]
+#define Font67 [UIFont systemFontOfSize:67]
+#define Font68 [UIFont systemFontOfSize:68]
+#define Font69 [UIFont systemFontOfSize:69]
+#define Font70 [UIFont systemFontOfSize:70]
+
+
+#endif /* FontTable_h */
